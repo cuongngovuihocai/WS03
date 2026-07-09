@@ -545,23 +545,38 @@ ${extraText}- Thiết kế có tính tương tác cao (Interactive): Có hover h
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="bg-white/80 backdrop-blur-xs p-5 rounded-2xl border border-brand-100/50">
-                    <h4 className="text-base font-bold text-gray-900 flex items-center gap-1.5 mb-2">
-                      <span className="text-brand-600">🔄</span> Làm từng bước (Iterative)
-                    </h4>
-                    <p className="text-sm md:text-base text-gray-700 leading-relaxed font-medium">
-                      Nếu AI làm ra sản phẩm chưa hoàn toàn ưng ý, đừng xóa đi làm lại từ đầu. Hãy bảo: <span className="font-bold text-brand-800">&ldquo;Giữ nguyên cấu trúc này, chỉ thay đổi câu hỏi thành [Câu hỏi mới]&rdquo;</span> hoặc chỉ chỉnh riêng một thành phần nhỏ. AI tiếp thu và nâng cấp cực kỳ mượt mà qua các bước nhỏ!
-                    </p>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div className="bg-white/80 backdrop-blur-xs p-5 rounded-2xl border border-brand-100/50 flex flex-col justify-between">
+                    <div>
+                      <h4 className="text-base font-bold text-gray-900 flex items-center gap-1.5 mb-2">
+                        <span className="text-brand-600">🔄</span> Làm từng bước (Iterative)
+                      </h4>
+                      <p className="text-sm md:text-base text-gray-700 leading-relaxed font-medium">
+                        Nếu AI làm ra sản phẩm chưa hoàn toàn ưng ý, đừng xóa đi làm lại từ đầu. Hãy bảo: <span className="font-bold text-brand-800">&ldquo;Giữ nguyên cấu trúc này, chỉ thay đổi câu hỏi thành [Câu hỏi mới]&rdquo;</span> hoặc chỉ chỉnh riêng một thành phần nhỏ. AI tiếp thu và nâng cấp cực kỳ mượt mà qua các bước nhỏ!
+                      </p>
+                    </div>
                   </div>
 
-                  <div className="bg-white/80 backdrop-blur-xs p-5 rounded-2xl border border-brand-100/50">
-                    <h4 className="text-base font-bold text-gray-900 flex items-center gap-1.5 mb-2">
-                      <span className="text-brand-600">🎨</span> Thêm cá tính cho học liệu
-                    </h4>
-                    <p className="text-sm md:text-base text-gray-700 leading-relaxed font-medium">
-                      Đừng ngại ra các câu lệnh mang phong thái cảm xúc, thẩm mỹ: <span className="font-bold text-brand-800">&ldquo;Hãy làm cho giao diện trông giống của một trò chơi phiêu lưu&rdquo;</span> hoặc <span className="font-bold text-brand-800">&ldquo;Hãy dùng tông màu pastel dịu mắt giống như trò chơi Kahoot&rdquo;</span>. AI hiểu rất tốt các tính từ mô tả cảm xúc và màu sắc!
-                    </p>
+                  <div className="bg-white/80 backdrop-blur-xs p-5 rounded-2xl border border-brand-100/50 flex flex-col justify-between">
+                    <div>
+                      <h4 className="text-base font-bold text-gray-900 flex items-center gap-1.5 mb-2">
+                        <span className="text-brand-600">🎨</span> Thêm cá tính cho học liệu
+                      </h4>
+                      <p className="text-sm md:text-base text-gray-700 leading-relaxed font-medium">
+                        Đừng ngại ra các câu lệnh mang phong thái cảm xúc, thẩm mỹ: <span className="font-bold text-brand-800">&ldquo;Hãy làm cho giao diện trông giống của một trò chơi phiêu lưu&rdquo;</span> hoặc <span className="font-bold text-brand-800">&ldquo;Hãy dùng tông màu pastel dịu mắt giống như trò chơi Kahoot&rdquo;</span>. AI hiểu rất tốt các tính từ mô tả cảm xúc và màu sắc!
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="bg-white/80 backdrop-blur-xs p-5 rounded-2xl border border-brand-100/50 flex flex-col justify-between">
+                    <div>
+                      <h4 className="text-base font-bold text-gray-900 flex items-center gap-1.5 mb-2">
+                        <span className="text-brand-600">✨</span> Dùng chức năng &ldquo;Remix&rdquo;
+                      </h4>
+                      <p className="text-sm md:text-base text-gray-700 leading-relaxed font-medium">
+                        Nếu bạn thấy một ứng dụng của đồng nghiệp (hoặc của giảng viên) hay, hãy chụp màn hình (hoặc copy link) và hỏi AI: <span className="font-bold text-brand-800">&ldquo;Hãy phân tích cấu trúc của ứng dụng này và tạo cho tôi một ứng dụng tương tự nhưng với nội dung về [Môn của bạn]&rdquo;</span>.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
