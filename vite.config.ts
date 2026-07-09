@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/WS03/',
+    base: 'WS03',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
