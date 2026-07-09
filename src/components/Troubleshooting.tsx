@@ -194,7 +194,7 @@ export default function Troubleshooting() {
                   🤝 Hỏi bạn bên cạnh
                 </h4>
                 <p className="text-sm md:text-base text-gray-750 mt-1.5 leading-relaxed font-medium">
-                  Trước khi gọi giảng viên hoặc diễn giả, hãy quay sang thảo luận với người bạn đồng nghiệp ngồi ngay bên cạnh mình. Hai cái đầu luôn thông minh hơn một cái đầu, và ba cái đầu thì chắc chắn tốt hơn hai! Gắn kết sư phạm chính là sức mạnh cốt lõi.
+                  Trước khi gọi giảng viên hoặc trợ giảng, hãy quay sang thảo luận với người bạn đồng nghiệp ngồi ngay bên cạnh mình. Hai cái đầu luôn thông minh hơn một cái đầu, và ba cái đầu thì chắc chắn tốt hơn hai! Gắn kết sư phạm chính là sức mạnh cốt lõi.
                 </p>
               </div>
             </div>
