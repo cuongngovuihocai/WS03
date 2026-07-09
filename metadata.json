@@ -1,0 +1,8 @@
+{
+  "name": "Learning Materials Workshop",
+  "description": "Landing page dành cho học viên tham gia Workshop 03: Xưởng Kiến tạo Học liệu - Biến ý tưởng thành trải nghiệm học tập.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
