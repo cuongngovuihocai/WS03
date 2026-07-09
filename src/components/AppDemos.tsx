@@ -135,7 +135,7 @@ export default function AppDemos() {
               <div>
                 <p className="font-bold">Lưu ý về các ứng dụng tích hợp Trí tuệ nhân tạo (AI):</p>
                 <p className="text-sm md:text-base text-amber-950 font-medium mt-1 leading-relaxed">
-                  Các ứng dụng được đánh dấu <span className="bg-amber-100 text-amber-800 px-1.5 py-0.2 rounded font-bold text-xs">Cần API key</span> hiện đang chạy trên hạn ngạch AI miễn phí của diễn giả. Để tránh nghẽn mạng, thầy cô vui lòng hạn chế truy cập dồn dập cùng lúc và không spam yêu cầu liên tục nhé!
+                  Các ứng dụng được đánh dấu <span className="bg-amber-100 text-amber-800 px-1.5 py-0.2 rounded font-bold text-xs">Có AI</span> hiện đang chạy trên hạn ngạch AI miễn phí của diễn giả. Để tránh nghẽn mạng, thầy cô vui lòng hạn chế truy cập dồn dập cùng lúc và không spam yêu cầu liên tục nhé!
                 </p>
               </div>
             </div>
@@ -154,7 +154,7 @@ export default function AppDemos() {
                       </span>
                       {app.hasApiLimit && (
                         <span className="text-xs font-bold text-amber-700 bg-amber-50 border border-amber-100 px-1.5 py-0.2 rounded-md">
-                          Cần API key *
+                          Có AI *
                         </span>
                       )}
                     </div>
