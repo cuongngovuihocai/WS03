@@ -71,16 +71,16 @@ export const DESIGN_PRINCIPLES: DesignPrinciple[] = [
 
 export const APP_DEMOS: AppDemo[] = [
   {
-    name: "Giải mã ô chữ",
-    url: "https://giaiochu.netlify.app/",
-    category: "Game học tập",
+    name: "Lô tô",
+    url: "https://cuongngovuihocai.github.io/LoTo/",
+    category: "Game tương tác",
     hasApiLimit: false,
     isMain: true
   },
   {
-    name: "Vòng quay may mắn",
-    url: "https://cuongngovuihocai.github.io/luckyWheels/",
-    category: "Công cụ lớp học",
+    name: "Gold miner (đào vàng)",
+    url: "https://cuongngovuihocai.github.io/GoldMiner/",
+    category: "Game tương tác",
     hasApiLimit: false,
     isMain: true
   },
@@ -90,6 +90,20 @@ export const APP_DEMOS: AppDemo[] = [
     category: "Toán học tương tác",
     hasApiLimit: false,
     isMain: true
+  },
+  {
+    name: "Giải mã ô chữ",
+    url: "https://giaiochu.netlify.app/",
+    category: "Game học tập",
+    hasApiLimit: false,
+    isMain: false
+  },
+  {
+    name: "Vòng quay may mắn",
+    url: "https://cuongngovuihocai.github.io/luckyWheels/",
+    category: "Công cụ lớp học",
+    hasApiLimit: false,
+    isMain: false
   },
   {
     name: "Tây Balô Chatbot (Có AI)",
@@ -118,12 +132,6 @@ export const APP_DEMOS: AppDemo[] = [
   {
     name: "Hứng lộc đầu xuân",
     url: "https://cuongngovuihocai.github.io/hungloc/",
-    category: "Game tương tác",
-    hasApiLimit: false
-  },
-  {
-    name: "Gold Miner (Đào vàng)",
-    url: "https://cuongngovuihocai.github.io/GoldMiner/",
     category: "Game tương tác",
     hasApiLimit: false
   },
@@ -192,13 +200,13 @@ export const WORKSHOP_STAGES: WorkshopStage[] = [
     equipment: "Sự tò mò, óc quan sát",
     description: "Khởi động với việc trải nghiệm trực tiếp các học liệu hấp dẫn và tìm hiểu sức mạnh không ngờ đằng sau phương pháp làm mới.",
     activities: [
-      "Quét mã hoặc nhấp vào liên kết để trực tiếp trải nghiệm 3 ứng dụng web tiêu biểu: Giải ô chữ, Vòng quay may mắn, và Magic Math Defender.",
-      "'Đoán Prompt': Để lập trình ra ứng dụng học Toán sinh động như Magic Math, chúng ta cần viết bao nhiêu câu lệnh?",
+      "Nhấn vào liên kết để trực tiếp trải nghiệm 3 ứng dụng web tiêu biểu: Lô tô, Gold miner (đào vàng), và Magic Math Defender.",
+      "'Đoán Prompt': Để lập trình ra ứng dụng học Toán sinh động như Magic Math Defender, chúng ta cần viết bao nhiêu câu lệnh?",
       "Tìm hiểu: Làm sao để khởi tạo các ứng dụng một cách nhanh chóng và nhẹ nhàng?"
     ],
     links: [
-      { label: "🎮 Giải mã ô chữ", url: "https://giaiochu.netlify.app/" },
-      { label: "🎡 Vòng quay may mắn", url: "https://cuongngovuihocai.github.io/luckyWheels/" },
+      { label: "🎰 Lô tô", url: "https://cuongngovuihocai.github.io/LoTo/" },
+      { label: "⛏️ Gold miner (đào vàng)", url: "https://cuongngovuihocai.github.io/GoldMiner/" },
       { label: "⚔️ Magic Math Defender", url: "https://cuongngovuihocai.github.io/MagicMathDefender/" }
     ]
   },
@@ -207,7 +215,7 @@ export const WORKSHOP_STAGES: WorkshopStage[] = [
     title: "Họ đã làm điều đó như thế nào?",
     duration: "15 phút",
     equipment: "Trải nghiệm Vibe Coding - Lập trình bằng Ý tưởng",
-    description: "Thầy cô sẽ bước vào thế giới Vibe Coding thực thụ: học bằng trải nghiệm trực tiếp và tạo ra sản phẩm thành công đầu tiên trong thư thái.",
+    description: "Bước vào thế giới Vibe Coding: học bằng trải nghiệm trực tiếp và tạo ra thành phẩm đầu tiên trong thư thái.",
     activities: [
       "Truy cập ứng dụng đặc biệt 'Bring Anything to Life'.",
       "Tải lên một file ảnh phác thảo ý tưởng học liệu. Nếu không có sẵn file hình, thầy cô có thể dùng các file trong phần Học liệu mẫu để thực hành",
@@ -224,7 +232,7 @@ export const WORKSHOP_STAGES: WorkshopStage[] = [
     equipment: "Cách giao tiếp hiệu quả với AI",
     description: "Đúc rút phương pháp và nắm chắc cách vận hành để biến AI thành người cộng sự lý tưởng.",
     activities: [
-      "'Hiểu mình': Cách xác định mong muốn cá nhân, hình dung rõ nét cấu trúc, giao diện học liệu mong đợi (ví dụ: tư duy thiết kế backdrop cho một Đêm Hội Trăng Rằm).",
+      "'Hiểu mình': Xác định mong muốn cá nhân, hình dung rõ nét cấu trúc, giao diện học liệu mong đợi.",
       "'Biết người': Thấu hiểu thế mạnh, hạn chế, các tùy chỉnh kỹ thuật của AI đang đồng hành.",
       "Khám phá công cụ 'Build App' trong Google AI Studio: Remix các mẫu học liệu có sẵn trong thư viện, và làm chủ các nút chức năng chính trên giao diện Build App."
     ]
@@ -234,11 +242,11 @@ export const WORKSHOP_STAGES: WorkshopStage[] = [
     title: "Đến lượt bạn!",
     duration: "40 phút",
     equipment: "Phương pháp mới để kiến tạo học liệu",
-    description: "Chặng thực hành chính với sự tập trung cao độ để hiện thực hoá ý tưởng dạy học của riêng thầy cô.",
+    description: "Chặng thực hành chính với sự tập trung cao độ để hiện thực hoá ý tưởng dạy học của riêng mình.",
     activities: [
-      "Mở ứng dụng Build App trong Google AI Studio và xây dựng học liệu phù hợp nhất với nhu cầu của mình.",
+      "Mở Build App trong Google AI Studio và xây dựng học liệu phù hợp với nhu cầu của mình.",
       "Tự do thử nghiệm, chỉnh sửa, ra lệnh và nhận phản hồi tức thì từ AI để hoàn thiện giao diện, chức năng.",
-      "Lưu ý: Nếu không có ý tưởng ban đầu nào, thầy cô hãy sử dụng app 'Học chơi cờ vua' (phần Học liệu mẫu) để thực hành Remix."
+      "Lưu ý: Nếu không có ý tưởng ban đầu nào, thầy cô hãy sử dụng app 'Học chơi cờ vua' (trong phần Học liệu) để thực hành Remix."
     ]
   },
   {
@@ -266,10 +274,10 @@ export const WORKSHOP_STAGES: WorkshopStage[] = [
     equipment: "Một cộng đồng để tiếp tục sáng tạo",
     description: "Tổng kết, giải đáp thắc mắc và gia nhập cộng đồng những nhà giáo dục đổi mới sáng tạo.",
     activities: [
-      "Triển lãm sản phẩm: Toàn bộ học liệu của lớp học được đưa lên Padlet chung để cùng nhau thả tim, ghi nhận.",
+      "Triển lãm sản phẩm: Toàn bộ học liệu của lớp học được đưa lên Padlet chung để cùng nhau thả tim, ghi nhận, bình luận.",
       "Tìm hiểu những lưu ý quan trọng khi tạo ứng dụng AI (bảo mật dữ liệu học sinh, quản lý API key cá nhân hiệu quả).",
       "Hoạt động Hỏi - Đáp trực tiếp: Cùng nhau trao đổi, giải đáp những vướng mắc phát sinh trong quá trình thực hành Vibe Coding.",
-      "Kết nối với Cộng đồng FB 'Bụi Phấn AI' để tiếp tục chia sẻ, đồng hành và chuẩn bị cho buổi học chuyên sâu tiếp theo."
+      "Kết nối với Cộng đồng FB 'Bụi Phấn AI' để tiếp tục chia sẻ, đồng hành và nhận thông báo tham gia các khóa học khác."
     ],
     links: [
       { label: "Trang Padlet chung của khóa học", url: "https://padlet.com/ngannguyen40/xuong-kien-tao-hoc-lieu-bxpusmzs6dkcc5mf" },

@@ -96,7 +96,8 @@ export default function AboutWorkshop({ className = "lg:col-span-6 space-y-6" }:
           href="#chuan-bi"
           className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white border border-gray-200 text-gray-700 font-semibold text-sm hover:bg-gray-50 transition hover:border-brand-500 hover:text-brand-700 duration-200"
         >
-          Chuẩn bị bài học
+          Chuẩn bị hành trang
+          <ArrowRight className="w-4 h-4" />
         </a>
       </div>
     </motion.div>

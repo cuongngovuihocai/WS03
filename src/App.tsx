@@ -24,7 +24,7 @@ export default function App() {
     { id: "triet-ly", label: "Triết lý" },
     { id: "hanh-trinh", label: "6 Chặng" },
     { id: "bo-tao-prompt", label: "Tạo Prompt" },
-    { id: "cuu-ho", label: "Cứu hộ" },
+    { id: "cuu-ho", label: "Cẩm nang" },
     { id: "chuan-bi", label: "Chuẩn bị" },
     { id: "hoc-lieu", label: "Học liệu" },
     { id: "giai-dap", label: "Hỏi đáp" },
@@ -229,7 +229,7 @@ export default function App() {
                 <span className="text-xl font-bold text-white tracking-tight">XƯỞNG KIẾN TẠO HỌC LIỆU</span>
               </div>
               <p className="text-base text-slate-300 leading-relaxed max-w-md">
-                Workshop 03 chuyên sâu đồng hành cùng giáo viên trong kỷ nguyên trí tuệ nhân tạo, đổi mới phương thức giảng dạy theo triết lý Creative Learning của MIT Media Lab.
+                Workshop 03 đồng hành cùng giáo viên trong kỷ nguyên trí tuệ nhân tạo, đổi mới phương thức giảng dạy theo triết lý Creative Learning của MIT Media Lab.
               </p>
             </div>
 
@@ -253,12 +253,19 @@ export default function App() {
 
           <div className="border-t border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-400">
             <div className="flex items-center">
-              <img 
-                src="https://lh3.googleusercontent.com/d/1CihXmyKfVHJz6283B2Zz_L6i2pvEmB7Q" 
-                alt="Ham Chơi Education Logo" 
-                className="h-[124px] w-[183.75px] opacity-95 hover:opacity-100 transition rounded-xl"
-                referrerPolicy="no-referrer"
-              />
+              <a 
+                href="https://www.facebook.com/people/Ham-Ch%C6%A1i-Education/100081637728642/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:scale-[1.02] transition-transform duration-200 block"
+              >
+                <img 
+                  src="https://lh3.googleusercontent.com/d/1CihXmyKfVHJz6283B2Zz_L6i2pvEmB7Q" 
+                  alt="Ham Chơi Education Logo" 
+                  className="h-[124px] w-[183.75px] opacity-95 hover:opacity-100 transition rounded-xl"
+                  referrerPolicy="no-referrer"
+                />
+              </a>
             </div>
             <p className="font-mono text-sm">Thiết kế bởi Trí tuệ Nhân tạo</p>
           </div>
