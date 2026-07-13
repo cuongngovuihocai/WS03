@@ -29,7 +29,7 @@ export default function FAQ() {
     },
     {
       question: "Tôi cần mang gì đến buổi học thực hành trực tiếp?",
-      answer: "Thầy cô vui lòng chuẩn bị: một chiếc laptop cá nhân (nhớ mang theo sạc pin), đã đăng nhập sẵn tài khoản Google (Gmail) và tài khoản GitHub, mang theo Căn cước công dân (CCCD) để vào cổng, cùng một vài ý tưởng trò chơi hoặc học liệu mà thầy cô luôn ao ước xây dựng cho môn học của mình!"
+      answer: "Thầy cô vui lòng chuẩn bị: một chiếc laptop cá nhân (đã sạc đầy pin, đã đăng nhập sẵn tài khoản Google (Gmail) và tài khoản GitHub), mang theo Căn cước công dân (CCCD) để vào cổng, cùng một vài ý tưởng trò chơi hoặc học liệu mà thầy cô luôn ao ước xây dựng cho môn học của mình!"
     },
     {
       question: "Quy định an ninh khi đến học trực tiếp tại Trung tâm Hoa Kỳ (American Center) như thế nào?",
