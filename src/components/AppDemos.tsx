@@ -4,7 +4,7 @@ import { ExternalLink, Flame, ShieldAlert, Sparkles, BookOpen, Layers, GitFork, 
 import { APP_DEMOS } from "../data";
 
 export default function AppDemos() {
-  const [activeTab, setActiveTab] = useState<"class" | "handout" | "remix" | "images">("class");
+  const [activeTab, setActiveTab] = useState<"class" | "handout" | "remix" | "images" | "slides">("class");
   const [selectedZoomImage, setSelectedZoomImage] = useState<string | null>(null);
 
   const classApps = APP_DEMOS.filter((app) => app.isMain);
@@ -23,7 +23,7 @@ export default function AppDemos() {
             Kho học liệu và ứng dụng mẫu
           </h2>
           <p className="text-base text-gray-750 mt-2 max-w-2xl mx-auto">
-            Các học liệu đã được hai diễn giả xây dựng hoàn toàn từ Vibe Coding. Thầy cô hãy trực tiếp nhấn vào để trải nghiệm tốc độ và sức mạnh sư phạm thực tế.
+            Các học liệu được xây dựng hoàn toàn từ Vibe Coding
           </p>
         </div>
 
@@ -42,6 +42,17 @@ export default function AppDemos() {
               Trải nghiệm chính tại lớp ({classApps.length} App)
             </button>
             <button
+              onClick={() => setActiveTab("slides")}
+              className={`px-5 py-2.5 rounded-xl text-sm md:text-base font-bold transition-all flex items-center gap-2 ${
+                activeTab === "slides"
+                  ? "bg-white text-rose-700 shadow-sm border border-rose-100"
+                  : "text-gray-650 hover:text-gray-800"
+              }`}
+            >
+              <BookOpen className="w-4 h-4 text-rose-600" />
+              Bài trình chiếu
+            </button>
+            <button
               onClick={() => setActiveTab("handout")}
               className={`px-5 py-2.5 rounded-xl text-sm md:text-base font-bold transition-all flex items-center gap-2 ${
                 activeTab === "handout"
@@ -50,7 +61,7 @@ export default function AppDemos() {
               }`}
             >
               <Layers className="w-4 h-4 text-brand-600" />
-              Thư viện tự trải nghiệm thêm ({handoutApps.length} App)
+              Thư viện tự trải nghiệm ({handoutApps.length} App)
             </button>
             <button
               onClick={() => setActiveTab("remix")}
@@ -61,7 +72,7 @@ export default function AppDemos() {
               }`}
             >
               <GitFork className="w-4 h-4 text-indigo-600 animate-pulse" />
-              Ứng dụng chờ Remix ({remixApps.length} App)
+              Ứng dụng chờ Remix chặng 4 ({remixApps.length} App)
             </button>
             <button
               onClick={() => setActiveTab("images")}
@@ -106,7 +117,7 @@ export default function AppDemos() {
                       {app.name}
                     </h3>
                     <p className="text-sm md:text-base text-gray-750 mt-2 leading-relaxed font-medium">
-                      Học liệu chất lượng cao, giao diện trực quan sinh động, sẵn sàng hỗ trợ giảng dạy ngay tại chỗ.
+                      Học liệu chất lượng cao, giao diện trực quan sinh động, sẵn sàng sử dụng ngay.
                     </p>
                   </div>
 
@@ -123,6 +134,55 @@ export default function AppDemos() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        )}
+
+        {activeTab === "slides" && (
+          <div className="max-w-3xl mx-auto">
+            {/* Info Box */}
+            <div className="bg-rose-50/60 border border-rose-100 rounded-2xl p-5 mb-8 flex items-start gap-3.5 text-base text-rose-950 font-bold">
+              <span className="text-xl shrink-0">📊</span>
+              <div>
+                <p className="font-extrabold text-base md:text-lg">Bài trình chiếu chính thức của Workshop:</p>
+                <p className="text-sm md:text-base text-rose-950 mt-1 leading-relaxed font-medium">
+                  Học viên có thể mở để xem lại hoặc theo dõi trong quá trình học
+                </p>
+              </div>
+            </div>
+
+            {/* Slide Card */}
+            <div className="bg-gradient-to-br from-white to-rose-50/20 border border-rose-150 rounded-3xl p-8 shadow-xs hover:shadow-md transition-all duration-300 relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-rose-50 rounded-full blur-3xl -mr-10 -mt-10 opacity-70 group-hover:bg-rose-100 transition-colors" />
+              
+              <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+                <div className="space-y-4 max-w-xl">
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-bold text-rose-700 uppercase tracking-wider bg-rose-100 px-2.5 py-1 rounded-md">
+                      Slide Bài Giảng
+                    </span>
+                    <span className="text-xs font-bold text-indigo-700 bg-indigo-50 border border-indigo-100 px-2 py-0.5 rounded-md flex items-center gap-1">
+                      Canva Presentation
+                    </span>
+                  </div>
+
+                  <h3 className="text-xl md:text-2xl font-bold text-gray-900 group-hover:text-rose-800 transition">
+                    Workshop 03: Xưởng Kiến tạo Học liệu
+                  </h3>
+                </div>
+
+                <div className="shrink-0 flex flex-col gap-3 min-w-[200px]">
+                  <a
+                    href="https://ws03.my.canva.site/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-extrabold text-sm md:text-base shadow-xs hover:shadow-md transition duration-200"
+                  >
+                    Xem bài trình chiếu
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         )}
@@ -190,7 +250,7 @@ export default function AppDemos() {
             <div className="bg-indigo-50/60 border border-indigo-100 rounded-2xl p-5 mb-8 flex items-start gap-3 text-base text-indigo-950 font-bold">
               <span className="text-xl">💡</span>
               <div>
-                <p className="font-extrabold text-base md:text-lg">Phương án dự phòng chất lượng cao:</p>
+                <p className="font-extrabold text-base md:text-lg">Phương án dự phòng:</p>
                 <p className="text-sm md:text-base text-indigo-950 mt-1 leading-relaxed font-medium">
                   Trong trường hợp quý thầy cô chưa hoàn thiện được ứng dụng riêng trong <strong>Chặng 4 (Đến lượt bạn!)</strong>, thầy cô hoàn toàn có thể sử dụng ứng dụng <strong>Học chơi cờ vua</strong> đã được chuẩn bị sẵn dưới đây để tiếp tục thực hành phần <strong>Xuất bản và Chia sẻ của Chặng 5</strong> một cách mượt mà nhất.
                 </p>
@@ -222,7 +282,7 @@ export default function AppDemos() {
                     </h3>
 
                     <p className="text-sm md:text-base text-gray-750 leading-relaxed font-medium">
-                      Ứng dụng web trực quan, tương tác cao giúp trẻ em làm quen và học chơi cờ vua một cách hứng thú và dễ hiểu nhất. Một học liệu mẫu hoàn hảo cho phương pháp dạy học thông qua trò chơi (Gamification).
+                      Ứng dụng web trực quan, tương tác cao giúp trẻ em làm quen và học chơi cờ vua một cách hứng thú và vui vẻ nhất. Một học liệu mẫu cho phương pháp dạy học thông qua trò chơi (Gamification).
                     </p>
                   </div>
 
@@ -257,7 +317,7 @@ export default function AppDemos() {
               <div>
                 <p className="font-extrabold text-base md:text-lg">Hình ảnh mẫu cho Chặng 2 thực hành:</p>
                 <p className="text-sm md:text-base text-emerald-950 mt-1 leading-relaxed font-medium">
-                  Thầy cô hãy nhấp chuột vào hình vẽ bên dưới để phóng to xem chi tiết, hoặc nhấp vào nút tải ảnh để tải về máy tính cá nhân. Sau đó, sử dụng các hình phác thảo ý tưởng này để tải lên ứng dụng <strong>Bring Anything to Life</strong> tại Chặng 2 nhé!
+                  Thầy cô hãy nhấp chuột vào hình vẽ bên dưới để phóng to xem chi tiết, hoặc nhấp vào nút tải ảnh để tải về máy tính cá nhân. Sau đó, sử dụng các file hình này để tải lên ứng dụng <strong>Bring Anything to Life</strong> tại Chặng 2 nhé!
                 </p>
               </div>
             </div>
