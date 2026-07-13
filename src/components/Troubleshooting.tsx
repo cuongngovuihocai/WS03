@@ -24,7 +24,7 @@ export default function Troubleshooting() {
     {
       num: "2",
       title: "Khởi động AI Studio",
-      desc: "Mở công cụ Google AI Studio &rarr; Chọn chức năng Build App để bắt đầu khởi tạo môi trường lập trình trực quan bằng ngôn ngữ tự nhiên."
+      desc: "Mở công cụ Google AI Studio. Chọn chức năng Build App để bắt đầu khởi tạo môi trường lập trình trực quan bằng ngôn ngữ tự nhiên."
     },
     {
       num: "3",
@@ -315,12 +315,7 @@ Giao diện: [Màu sắc, bố cục, đối tượng học sinh].`;
                       ))}
                     </div>
 
-                    <div className="mt-6 bg-amber-50/50 border border-amber-200/60 p-4 rounded-2xl flex gap-3 items-start text-xs text-amber-900 font-medium">
-                      <span>💡</span>
-                      <div>
-                        <strong>Mẹo Remix cực mạnh:</strong> Nếu thầy cô thấy một học liệu của đồng nghiệp hoặc giảng viên hay, hãy chụp ảnh màn hình và hỏi AI: <span className="italic font-bold">&ldquo;Hãy phân tích cấu trúc ứng dụng này và tạo cho tôi ứng dụng tương tự với chủ đề [Môn của bạn].&rdquo;</span>
-                      </div>
-                    </div>
+
                   </div>
                 </div>
               </motion.div>
