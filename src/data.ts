@@ -72,7 +72,7 @@ export const DESIGN_PRINCIPLES: DesignPrinciple[] = [
 export const APP_DEMOS: AppDemo[] = [
   {
     name: "Lô tô",
-    url: "https://cuongngovuihocai.github.io/LoTo/",
+    url: "https://cuongngovuihocai.github.io/LoTo/player.html",
     category: "Game tương tác",
     hasApiLimit: false,
     isMain: true
@@ -205,7 +205,7 @@ export const WORKSHOP_STAGES: WorkshopStage[] = [
       "Tìm hiểu: Làm sao để khởi tạo các ứng dụng một cách nhanh chóng và nhẹ nhàng?"
     ],
     links: [
-      { label: "🎰 Lô tô", url: "https://cuongngovuihocai.github.io/LoTo/" },
+      { label: "🎰 Lô tô", url: "https://cuongngovuihocai.github.io/LoTo/player.html" },
       { label: "⛏️ Gold miner (đào vàng)", url: "https://cuongngovuihocai.github.io/GoldMiner/" },
       { label: "⚔️ Magic Math Defender", url: "https://cuongngovuihocai.github.io/MagicMathDefender/" }
     ]
@@ -235,6 +235,9 @@ export const WORKSHOP_STAGES: WorkshopStage[] = [
       "'Hiểu mình': Xác định mong muốn cá nhân, hình dung rõ nét cấu trúc, giao diện học liệu mong đợi.",
       "'Biết người': Thấu hiểu thế mạnh, hạn chế, các tùy chỉnh kỹ thuật của AI đang đồng hành.",
       "Khám phá công cụ 'Build App' trong Google AI Studio: Remix các mẫu học liệu có sẵn trong thư viện, và làm chủ các nút chức năng chính trên giao diện Build App."
+    ],
+    links: [
+      { label: "Mở Google AI Studio", url: "https://aistudio.google.com/" }
     ]
   },
   {
@@ -247,6 +250,9 @@ export const WORKSHOP_STAGES: WorkshopStage[] = [
       "Mở Build App trong Google AI Studio và xây dựng học liệu phù hợp với nhu cầu của mình.",
       "Tự do thử nghiệm, chỉnh sửa, ra lệnh và nhận phản hồi tức thì từ AI để hoàn thiện giao diện, chức năng.",
       "Lưu ý: Nếu không có ý tưởng ban đầu nào, thầy cô hãy sử dụng app 'Học chơi cờ vua' (trong phần Học liệu) để thực hành Remix."
+    ],
+    links: [
+      { label: "Mở Google AI Studio", url: "https://aistudio.google.com/" }
     ]
   },
   {
@@ -263,6 +269,7 @@ export const WORKSHOP_STAGES: WorkshopStage[] = [
       "Chia sẻ mã QR/ link lên Padlet để mọi người cùng trải nghiệm."
     ],
     links: [
+      { label: "Mở GitHub", url: "https://github.com/" },
       { label: "Trang Padlet chung của khóa học", url: "https://padlet.com/ngannguyen40/xuong-kien-tao-hoc-lieu-bxpusmzs6dkcc5mf" },
       { label: "Xem Hướng dẫn xuất bản lên gitHub Pages", url: "https://cuongngovuihocai.github.io/GitHub/", secondary: true }
     ]
