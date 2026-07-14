@@ -154,6 +154,12 @@ export const APP_DEMOS: AppDemo[] = [
     hasApiLimit: false
   },
   {
+    name: "TickerBox",
+    url: "https://cuongngovuihocai.github.io/TickerBox/",
+    category: "Ứng dụng đếm thời gian",
+    hasApiLimit: false
+  },
+  {
     name: "Học Chơi Cờ Vua",
     url: "https://ai.studio/apps/e5af4696-30a6-44d0-a107-54f7b4e2e228",
     category: "Ứng dụng chờ Remix",
