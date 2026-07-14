@@ -276,6 +276,7 @@ export const WORKSHOP_STAGES: WorkshopStage[] = [
     ],
     links: [
       { label: "Mở GitHub", url: "https://github.com/" },
+      { label: "Công cụ chuyển link thành mã QR", url: "https://cuongngovuihocai.github.io/QRcode/" },
       { label: "Trang Padlet chung của khóa học", url: "https://padlet.com/ngannguyen40/xuong-kien-tao-hoc-lieu-bxpusmzs6dkcc5mf" },
       { label: "Xem Hướng dẫn xuất bản lên gitHub Pages", url: "https://cuongngovuihocai.github.io/GitHub/", secondary: true }
     ]
