@@ -228,7 +228,7 @@ export const WORKSHOP_STAGES: WorkshopStage[] = [
       "Nhấn khởi tạo và chiêm ngưỡng AI tự động biến nét vẽ thô sơ thành một học liệu web tương tác có thể hoạt động ngay.",
     ],
     links: [
-      { label: "Mở ứng dụng Bring Anything to Life", url: "https://ai.studio/apps/ee941811-2ca3-4efd-9fd9-2fad6cb5be64" }
+      { label: "Mở ứng dụng Bring Anything to Life", url: "https://ai.studio/apps/aa00dd75-cfc1-4eb5-9b2c-d45652a69796?fullscreenApplet=true" }
     ]
   },
   {
