@@ -430,7 +430,7 @@ export default function AppDemos() {
               <div>
                 <p className="font-extrabold text-base md:text-lg">Clip minh hoạ:</p>
                 <p className="text-sm md:text-base text-red-950 font-medium mt-1 leading-relaxed">
-                  Xem các clip minh họa bên dưới để cùng khám phá và làm quen với công cụ <strong>Bring Anything to Life</strong> cùng các tính năng hữu ích khác một cách sinh động trực quan nhất.
+                  Thầy cô hãy xem các clip minh hoạ bên dưới để biết cách làm, trong trường hợp không theo kịp phần thực hành.
                 </p>
               </div>
             </div>
@@ -464,6 +464,22 @@ export default function AppDemos() {
                     allow="autoplay; encrypted-media"
                     allowFullScreen
                     title="Tạo ứng dụng mới trong Build App"
+                  ></iframe>
+                </div>
+              </div>
+
+              {/* Video 3 Container */}
+              <div className="bg-slate-50 border border-slate-200 rounded-3xl p-6 hover:shadow-md transition duration-250">
+                <h3 className="text-base md:text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  <span className="text-red-600">▶</span> Xuất bản Web App lên GitHub Pages
+                </h3>
+                <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-gray-150 bg-black shadow-xs">
+                  <iframe
+                    src="https://drive.google.com/file/d/1tOXx3FcrUhsZjBukIA89ALwFLCH9-NdM/preview"
+                    className="absolute top-0 left-0 w-full h-full border-0"
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen
+                    title="Xuất bản Web App lên GitHub Pages"
                   ></iframe>
                 </div>
               </div>
