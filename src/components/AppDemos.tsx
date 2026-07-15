@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
-import { ExternalLink, Flame, ShieldAlert, Sparkles, BookOpen, Layers, GitFork, Crown, Image, FileText } from "lucide-react";
+import { ExternalLink, Flame, ShieldAlert, Sparkles, BookOpen, Layers, GitFork, Crown, Image, FileText, Play } from "lucide-react";
 import { APP_DEMOS } from "../data";
 
 export default function AppDemos() {
-  const [activeTab, setActiveTab] = useState<"class" | "handout" | "remix" | "images" | "slides">("class");
+  const [activeTab, setActiveTab] = useState<"class" | "handout" | "remix" | "images" | "slides" | "video">("class");
   const [selectedZoomImage, setSelectedZoomImage] = useState<string | null>(null);
 
   const classApps = APP_DEMOS.filter((app) => app.isMain);
@@ -117,6 +117,17 @@ export default function AppDemos() {
             >
               <Image className="w-4 h-4 text-emerald-600" />
               Hình ảnh thực hành chặng 2
+            </button>
+            <button
+              onClick={() => setActiveTab("video")}
+              className={`px-5 py-2.5 rounded-xl text-sm md:text-base font-bold transition-all flex items-center gap-2 ${
+                activeTab === "video"
+                  ? "bg-white text-red-700 shadow-sm border border-red-100"
+                  : "text-gray-650 hover:text-gray-800"
+              }`}
+            >
+              <Play className="w-4 h-4 text-red-600" />
+              Clip minh hoạ
             </button>
           </div>
         </div>
@@ -407,6 +418,55 @@ export default function AppDemos() {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        )}
+
+        {activeTab === "video" && (
+          <div className="max-w-3xl mx-auto">
+            {/* Info Box */}
+            <div className="bg-red-50/50 border border-red-100 rounded-2xl p-5 mb-8 flex items-start gap-3 text-base text-red-950 font-bold">
+              <span className="text-xl">🎥</span>
+              <div>
+                <p className="font-extrabold text-base md:text-lg">Clip minh hoạ:</p>
+                <p className="text-sm md:text-base text-red-950 font-medium mt-1 leading-relaxed">
+                  Xem các clip minh họa bên dưới để cùng khám phá và làm quen với công cụ <strong>Bring Anything to Life</strong> cùng các tính năng hữu ích khác một cách sinh động trực quan nhất.
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-8">
+              {/* Video 1 Container */}
+              <div className="bg-slate-50 border border-slate-200 rounded-3xl p-6 hover:shadow-md transition duration-250">
+                <h3 className="text-base md:text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  <span className="text-red-600">▶</span> Khám phá Bring Anything to Life
+                </h3>
+                <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-gray-150 bg-black shadow-xs">
+                  <iframe
+                    src="https://drive.google.com/file/d/1W2KcA3lg4n-SGNyg7FyVkKsR4iJkI4Or/preview"
+                    className="absolute top-0 left-0 w-full h-full border-0"
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen
+                    title="Khám phá Bring Anything to Life"
+                  ></iframe>
+                </div>
+              </div>
+
+              {/* Video 2 Container */}
+              <div className="bg-slate-50 border border-slate-200 rounded-3xl p-6 hover:shadow-md transition duration-250">
+                <h3 className="text-base md:text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  <span className="text-red-600">▶</span> Tạo ứng dụng mới trong Build App
+                </h3>
+                <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-gray-150 bg-black shadow-xs">
+                  <iframe
+                    src="https://drive.google.com/file/d/15M_C_7CPXGzcc8AQu7wXTSntCAXmlHfr/preview"
+                    className="absolute top-0 left-0 w-full h-full border-0"
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen
+                    title="Tạo ứng dụng mới trong Build App"
+                  ></iframe>
+                </div>
+              </div>
             </div>
           </div>
         )}
